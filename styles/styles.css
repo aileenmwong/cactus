@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(176,224,230);
+}
+
+.potWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 800px;
+  border: 1px solid black;
+}
+
+.potLip {
+  border-bottom: 100px solid rgb(226, 114, 91);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  transform: rotate(180deg);
+  height: 0;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.potLipShadow {
+  background-color: rgb(188, 71, 47);
+  height: 10px;
+  width: 220px;
+}
+
+.potBase {
+  border-bottom: 150px solid rgb(226, 114, 91);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  transform: rotate(180deg);
+  height: 0;
+  width: 200px;
+}
+
