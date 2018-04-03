@@ -2,38 +2,249 @@ body {
   background-color: rgb(176,224,230);
 }
 
-.potWrap {
+.plantWrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 800px;
+  height: 600px;
   border: 1px solid black;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.potWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 
 .potLip {
-  border-bottom: 100px solid rgb(226, 114, 91);
+  border-bottom: 80px solid rgb(226, 114, 91);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   transform: rotate(180deg);
   height: 0;
-  width: 250px;
+  width: 220px;
   border-radius: 5px;
+  z-index: 10;
 }
 
 .potLipShadow {
   background-color: rgb(188, 71, 47);
   height: 10px;
-  width: 220px;
+  width: 190px;
+  z-index: 10;
 }
 
 .potBase {
-  border-bottom: 150px solid rgb(226, 114, 91);
+  border-bottom: 120px solid rgb(226, 114, 91);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   transform: rotate(180deg);
   height: 0;
-  width: 200px;
+  width: 170px;
+  z-index: 10;
+}
+
+.cactusCenter {
+  width: 150px;
+  height: 250px;
+  border-radius: 50% 50% 0 0;
+  background-color: rgb(50, 205, 50);
+  z-index: 1;
+}
+
+.cactusEyes {
+  width: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+
+.eye {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 2;
+  margin-top: -100px;
+}
+
+.eyeOverlay {
+  background-color: rgb(50, 205, 50);
+  z-index: 3;
+  margin-top: 5px;
+}
+
+.spikeLeft {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 10px 5px 0;
+  border-color: transparent black transparent transparent;
+  z-index: 0;
+}
+
+.spikeRight {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 10px;
+  border-color: transparent transparent transparent black;
+  z-index: 0;
+}
+
+.spike1 {
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.spike2 {
+  margin-left: -10px;
+  margin-top: -30px;
+}
+
+.spike3 {
+  margin-left: -10px;
+  margin-top: -50px;
+}
+
+.spike4 {
+  margin-left: -10px;
+  margin-top: -70px;
+}
+
+.spike5 {
+  margin-left: -10px;
+  margin-top: -90px;
+}
+
+.spike6 {
+  margin-left: -10px;
+  margin-top: -110px;
+}
+
+.spike7 {
+  margin-left: -10px;
+  margin-top: -130px;
+}
+
+.spike8 {
+  margin-left: -9px;
+  margin-top: -150px;
+}
+
+.spike9 {
+  margin-left: -6px;
+  margin-top: -170px;
+  transform: rotate(10deg);
+}
+
+.spike10 {
+  margin-left: -1px;
+  margin-top: -190px;
+  transform: rotate(15deg);
+}
+
+.spike11 {
+  margin-left: 6px;
+  margin-top: -210px;
+  transform: rotate(23deg);
+}
+
+.spike12 {
+  margin-left: 18px;
+  margin-top: -230px;
+  transform: rotate(32deg);
+}
+
+.spike13 {
+  margin-left: 38px;
+  margin-top: -250px;
+  transform: rotate(50deg);
+}
+
+.spike14 {
+  margin-left: 150px;
+  margin-top: -10px;
+}
+
+.spike15 {
+  margin-left: 150px;
+  margin-top: -30px;
+}
+
+.spike16 {
+  margin-left: 150px;
+  margin-top: -50px;
+}
+
+.spike17 {
+  margin-left: 150px;
+  margin-top: -70px;
+}
+
+.spike18 {
+  margin-left: 150px;
+  margin-top: -90px;
+}
+
+.spike19 {
+  margin-left: 150px;
+  margin-top: -110px;
+}
+
+.spike20 {
+  margin-left: 150px;
+  margin-top: -130px;
+}
+
+.spike21 {
+  margin-left: 149px;
+  margin-top: -150px;
+}
+
+.spike22 {
+  margin-left: 146px;
+  margin-top: -170px;
+  transform: rotate(-10deg);
+}
+
+.spike23 {
+  margin-left: 141px;
+  margin-top: -190px;
+  transform: rotate(-14deg);
+}
+
+.spike24 {
+  margin-left: 133px;
+  margin-top: -210px;
+  transform: rotate(-22deg);
+}
+
+.spike25 {
+  margin-left: 120px;
+  margin-top: -230px;
+  transform: rotate(-35deg);
+}
+
+.spike26 {
+  margin-left: 100px;
+  margin-top: -250px;
+  transform: rotate(-50deg);
+}
+
+.spike27 {
+  margin-left: 70px;
+  margin-top: -260px;
+  transform: rotate(-90deg);
 }
 
