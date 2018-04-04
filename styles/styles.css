@@ -9,7 +9,7 @@ body {
   align-items: center;
   width: 400px;
   height: 600px;
-  border: 1px solid black;
+/*  border: 1px solid black;*/
   margin: 0 auto;
   z-index: 2;
 }
@@ -19,16 +19,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 200px;
   z-index: 2;
 }
 
 .potLip {
-  border-bottom: 80px solid rgb(226, 114, 91);
+  border-bottom: 100px solid rgb(226, 114, 91);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   transform: rotate(180deg);
   height: 0;
-  width: 220px;
+  width: 250px;
   border-radius: 5px;
   z-index: 10;
 }
@@ -36,18 +37,33 @@ body {
 .potLipShadow {
   background-color: rgb(188, 71, 47);
   height: 10px;
-  width: 190px;
+  width: 220px;
   z-index: 10;
 }
 
 .potBase {
-  border-bottom: 120px solid rgb(226, 114, 91);
+  border-bottom: 150px solid rgb(226, 114, 91);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   transform: rotate(180deg);
   height: 0;
-  width: 170px;
+  width: 200px;
   z-index: 10;
+}
+
+.cactusWrap {
+  animation: grow 2s ease-in 1;
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+  0% {
+    bottom: 130px;
+  }
+  100% {
+    bottom: 375px;
+  }
 }
 
 .cactusCenter {
@@ -113,13 +129,94 @@ body {
   }
 }
 
+.petal {
+  border-radius: 2% 50%;
+  height: 20px;
+  width: 20px;
+  opacity: 1;
+  position: absolute;
+  background-color: magenta;
+  z-index: 3;
+}
+
+.petal1 {
+  margin-left: -15px;
+  margin-top: -10px;
+}
+
+.petal2 {
+  margin-left: 0px;
+  margin-top: -15px;
+  transform: rotate(45deg);
+}
+
+.petal3 {
+  margin-left: 15px;
+  margin-top: -10px;
+  transform: rotate(90deg);
+}
+
+.petal4 {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.petal5 {
+  margin-left: 0px;
+  margin-top: 15px;
+  transform: rotate(45deg);
+}
+
+.petal6 {
+  margin-left: -15px;
+  margin-top: 10px;
+  transform: rotate(90deg);
+}
+
+.cactusBud {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: white;
+  opacity: 1;
+  z-index: 4;
+}
+
+.cactusFlower {
+  margin: 40%;
+}
+
+.cactusFlowerWrap {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  margin-top: -250px;
+  margin-left: -20px;
+  animation: bloom 2s ease-in;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes bloom {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(720deg);
+    transform-origin: 50% 50%;
+  }
+}
+
 .spikeLeft {
   position: absolute;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 5px 10px 5px 0;
-  border-color: transparent black transparent transparent;
+  border-color: transparent rgb(50, 205, 50) transparent transparent;
   z-index: 0;
 }
 
@@ -129,7 +226,7 @@ body {
   height: 0;
   border-style: solid;
   border-width: 5px 0 5px 10px;
-  border-color: transparent transparent transparent black;
+  border-color: transparent transparent transparent rgb(50, 205, 50);
   z-index: 0;
 }
 
