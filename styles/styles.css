@@ -55,6 +55,8 @@ body {
   animation: grow 2s ease-in 1;
   position: absolute;
   animation-fill-mode: forwards;
+  animation-delay: 1s;
+  bottom: 120px;
 }
 
 @keyframes grow {
@@ -194,7 +196,7 @@ body {
   margin-top: -250px;
   margin-left: -20px;
   animation: bloom 2s ease-in;
-  animation-delay: 2s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
